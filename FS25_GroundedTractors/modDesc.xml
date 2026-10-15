@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="113">
+    <author>Lucas Karsten</author>
+    <version>1.0.0.0</version>
+    <title>
+        <en>Grounded Tractors</en>
+        <de>Bodenhaftende Traktoren</de>
+    </title>
+    <description>
+        <en><![CDATA[Description:
+Tractors stop bouncing like a spring. Crawl through a ditch and the tractor stays glued to the ground; hit it at 40 km/h and only the front wheels lift a little before coming straight back down.
+
+What changes, on every motorized vehicle:
+- Centre of mass slightly lower and further forward, like a real engine block and front ballast.
+- Shorter suspension travel, so a ditch is no longer stored and returned like a trampoline.
+- Rotation is damped only while all wheels are in the air, so the tractor cannot spin mid-jump. On the ground it pitches and rolls exactly as before.
+Implements and trailers are not touched.
+
+Hotkeys:
+None. Works automatically on every savegame.
+
+GitHub: https://github.com/lucaskarsten/fs25-grounded-tractors]]></en>
+        <de><![CDATA[Beschreibung:
+Traktoren federn nicht mehr wie auf Sprungfedern. Langsam durch einen Graben bleibt der Traktor am Boden; bei 40 km/h heben nur die Vorderräder kurz ab und setzen sofort wieder auf.
+
+Was sich ändert, bei allen motorisierten Fahrzeugen:
+- Schwerpunkt etwas tiefer und weiter vorne, wie Motorblock und Frontgewicht eines echten Traktors.
+- Kürzerer Federweg, damit ein Graben nicht mehr wie ein Trampolin zurückgegeben wird.
+- Drehbewegungen werden nur gedämpft, solange alle Räder in der Luft sind, damit sich der Traktor im Sprung nicht dreht. Am Boden nickt und wankt er wie vorher.
+Geräte und Anhänger werden nicht verändert.
+
+Tastenbelegung:
+Keine. Funktioniert automatisch in jedem Spielstand.
+
+GitHub: https://github.com/lucaskarsten/fs25-grounded-tractors]]></de>
+    </description>
+    <iconFilename>icon_GroundedTractors.dds</iconFilename>
+    <multiplayer supported="true"/>
+    <extraSourceFiles>
+        <sourceFile filename="GroundedTractors.lua"/>
+    </extraSourceFiles>
+</modDesc>

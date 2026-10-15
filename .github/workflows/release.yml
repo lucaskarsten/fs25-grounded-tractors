@@ -1,0 +1,22 @@
+name: release
+on:
+  push:
+    tags: ['v*']
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Tag must match modDesc version
+        run: |
+          v=$(grep -oP '<version>\K[^<]+' FS25_GroundedTractors/modDesc.xml)
+          [ "v$v" = "$GITHUB_REF_NAME" ] || { echo "tag $GITHUB_REF_NAME != modDesc version $v"; exit 1; }
+          echo "VERSION=$v" >> "$GITHUB_ENV"
+      - name: Notes from CHANGELOG
+        run: awk -v v="## $VERSION" '$0==v{f=1;next} /^## /{f=0} f' CHANGELOG.md > notes.md && test -s notes.md
+      - run: bash build.sh
+      - run: gh release create "$GITHUB_REF_NAME" dist/FS25_GroundedTractors.zip --title "Grounded Tractors $VERSION" --notes-file notes.md
+        env:
+          GH_TOKEN: ${{ github.token }}

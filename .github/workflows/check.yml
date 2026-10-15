@@ -1,0 +1,18 @@
+name: check
+on: [push, pull_request]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get install -y luajit libxml2-utils
+      - name: Lua syntax
+        run: for f in FS25_GroundedTractors/*.lua; do luajit -bl "$f" > /dev/null; echo "ok $f"; done
+      - name: modDesc is well-formed
+        run: xmllint --noout FS25_GroundedTractors/modDesc.xml
+      - name: Build zip
+        run: bash build.sh
+      - uses: actions/upload-artifact@v4
+        with:
+          name: FS25_GroundedTractors
+          path: dist/FS25_GroundedTractors.zip
