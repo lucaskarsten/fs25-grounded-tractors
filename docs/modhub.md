@@ -18,7 +18,7 @@ Minor updates: wait at least 4 weeks between submissions; major fixes may go soo
 
 ## Uploading (from GIANTS' "Modders Guide to the ModHub", GDN downloads)
 
-1. Log in at https://www.farming-simulator.com/mods (green "Login", top right; register there if needed). Upload only works on the website, not in game.
+1. Log in at https://modhub.giants-software.com/main.php (ModHub account, separate from GDN). Upload only works on the website, not in game.
 2. "Add New" (bottom left) creates an "Untitled Mod" at the top of the list; click its name.
 3. Under "Data", pick `FS25_GroundedTractors.zip` from the GitHub release, accept the terms, "Upload Mod". The page fills its fields from modDesc.xml.
 4. Fill the fields still marked on the left (screenshots from `docs/screenshots/`), then "Submit" next to "Certification". Status becomes "pending"; QA answers by email, questions go through the ModHub Messenger.
