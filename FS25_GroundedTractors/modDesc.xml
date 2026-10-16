@@ -5,6 +5,7 @@
     <title>
         <en>Grounded Tractors</en>
         <de>Bodenhaftende Traktoren</de>
+        <fr>Tracteurs Bien Ancrés</fr>
     </title>
     <description>
         <en><![CDATA[Description:
@@ -33,6 +34,19 @@ Tastenbelegung:
 Keine. Funktioniert automatisch in jedem Spielstand.
 
 GitHub: https://github.com/lucaskarsten/fs25-grounded-tractors]]></de>
+        <fr><![CDATA[Description :
+Les tracteurs ne rebondissent plus comme sur des ressorts. Au pas dans un fossé, le tracteur reste collé au sol ; à 40 km/h, seules les roues avant se soulèvent un peu avant de retomber aussitôt.
+
+Ce qui change, sur tous les véhicules motorisés :
+- Centre de gravité un peu plus bas et plus en avant, comme le bloc moteur et le lestage avant d'un vrai tracteur.
+- Débattement de suspension plus court, pour que le fossé ne soit plus renvoyé comme un trampoline.
+- La rotation n'est amortie que lorsque toutes les roues sont en l'air, pour que le tracteur ne tourne pas pendant le saut. Au sol, il tangue et roule comme avant.
+Les outils et remorques ne sont pas modifiés.
+
+Raccourcis :
+Aucun. Fonctionne automatiquement dans chaque partie.
+
+GitHub : https://github.com/lucaskarsten/fs25-grounded-tractors]]></fr>
     </description>
     <iconFilename>icon_GroundedTractors.dds</iconFilename>
     <multiplayer supported="true"/>
