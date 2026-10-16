@@ -39,7 +39,7 @@ Enable `<development><controls>true</controls>` in `game.xml`, then in the `~` c
 
 - `bash check.sh`: syntax check every `.lua` with LuaJIT (Docker).
 - `bash build.sh`: writes `dist/FS25_GroundedTractors.zip`.
-- Icon: frame from the 19-55-53 test video (in-game), `docs/icon.png`.
+- Icon: in-game screenshot (HUD hidden with `gtHud`), `docs/icon.png`.
 
 License: MIT. ModHub checklist: [docs/modhub.md](docs/modhub.md).
 

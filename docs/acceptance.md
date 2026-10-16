@@ -1,6 +1,6 @@
 # Acceptance criteria (2026-10-15)
 
-Reference: Case IH Maxxum (base game), ditch next to the road on Krajow, filmed from above and the side.
+Reference: Case IH Vestrum 130 (base game), ditch next to the road on Krajow, filmed from above and the side.
 
 | Speed | Must look like |
 |---|---|
